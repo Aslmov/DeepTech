@@ -16,8 +16,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from app import urls
+from rest_framework import routers
+from app import views
+
+router = routers.DefaultRouter()
+router.register(r'Challenge', views.Challengeview, 'challenge')
+router.register(r'Module',views.Moduleview,'Module')
+router.register(r'Message',views.Messageview,'Message')
+
 
 urlpatterns = [
     path('home/', include(urls)),
     path('admin/', admin.site.urls),
+    path('api',include(router.urls)),
 ]
