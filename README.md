@@ -26,7 +26,7 @@ Installer egalement [Nodejs](https://nodejs.org/en/)
 
 Puis installer le projet:
 
-`` git clone https://github.com/AIDaft/stack-ucao.git ``
+`` git clone https://github.com/AIDaft/DeepTech.git ``
 
 Mais attention si vous compter travailler sur une branch en particulier faites un git clone depuis cette branch
 
