@@ -1,33 +1,10 @@
-from django.db import models
-from django.utils import timezone
-from django.db import models
+"""from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 
-
-# Create your models here.
-
-class Message(models.Model):
-    Text_chat = models.TextField()
-    Text_date = models.DateTimeField(default=timezone.now())
-
-
-class Challenge(models.Model):
-    Theme_text = models.CharField(max_length=100)
-    challenge_date = models.DateTimeField(default=timezone.now())
-    nbr_participants = models.IntegerField()
-
-
-class Module(models.Model):
-    name_module = models.CharField(max_length=50)
-    question_text = models.TextField()
-    response_text = models.TextField()
-    lien = models.CharField(max_length=150)
-
-#for users
 class UserManager(BaseUserManager):
 
     def create_user(self, name, firstName, pseudo, email, password=None, **kwargs):
-        """Create and return a `User` with an email, phone number, username and password."""
+        Create and return a `User` with an email, phone number, username and password.
         if name is None:
             raise TypeError('Le nom est incorrecte.')
         if firstName is None:
@@ -43,9 +20,7 @@ class UserManager(BaseUserManager):
         return user
 
     def create_superuser(self, name, firstName, pseudo, email, password):
-        """
         Create and return a `User` with superuser (admin) permissions.
-        """
         if password is None:
             raise TypeError('Superusers must have a password.')
         if email is None:
@@ -78,3 +53,4 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         return f"{self.email}"
+        """
