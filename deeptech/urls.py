@@ -20,12 +20,13 @@ from rest_framework import routers
 from app import views
 
 router = routers.DefaultRouter()
-router.register(r'Challenge', views.Challengeview, 'challenge')
-router.register(r'Module',views.Moduleview,'Module')
-router.register(r'Message',views.Messageview,'Message')
+router.register(r'challenge', views.Challengeview, 'challenge')
+router.register(r'module',views.Moduleview,'Module')
+router.register(r'message',views.Messageview,'Message')
 
 
 urlpatterns = [
-    path('api/', include((rooters))),
+    path('auth/', include((rooters))),
+    path('api/', include((router.urls))),
     path('admin/', admin.site.urls),
 ]

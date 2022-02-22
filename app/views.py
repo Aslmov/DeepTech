@@ -32,6 +32,7 @@ class Messageview(viewsets.ModelViewSet):
     serializer_class = MessageSerializer
     queryset = Message.objects.all()
 
+
 #class du view user
 class UserViewSet(viewsets.ModelViewSet):
     http_method_names = ['get']
