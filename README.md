@@ -1,4 +1,4 @@
-Ce projet est une palteforme en ligne pour le groupe DeepTech.
+Ce projet est une plateforme en ligne pour le group Deeptech.
 
 Les technologies utilise pour le developpement du site sont reactjs dans le cote front-end et djongo dans le cote back-end
 
