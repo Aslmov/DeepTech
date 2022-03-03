@@ -1,4 +1,4 @@
-Ce projet est un Forum pour l'universite UCAO SAINT-MICHELLE.
+Ce projet est une plateforme pour le groupe deeptech.
 
 Les technologies utilise pour le developpement du site sont reactjs dans le cote front-end et djongo dans le cote back-end
 
